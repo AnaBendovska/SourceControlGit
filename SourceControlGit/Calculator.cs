@@ -31,6 +31,9 @@ namespace SourceControlGit
                 case "*":
                     Multiply();
                     break;
+                case "/":
+                    Devide();
+                    break;
                 default:
                     Console.WriteLine("Invalid operation type.");
                     break;
@@ -50,6 +53,11 @@ namespace SourceControlGit
         public double Multiply()
         {
             return num1 * num2;
+        }
+
+        public double Devide()
+        {
+            return num1 / num2;
         }
 
     }
