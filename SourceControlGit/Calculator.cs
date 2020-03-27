@@ -6,16 +6,16 @@ namespace SourceControlGit
 {
     public class Calculator
     {
-        public double num1 { get; set; }
-        public double num2 { get; set; }
+        public double Num1 { get; set; }
+        public double Num2 { get; set; }
 
-        public string typeOperation { get; set; }
+        public string TypeOperation { get; set; }
 
         public Calculator(double num1, double num2, string typeOperation)
         {
-            this.num1 = num1;
-            this.num2 = num2;
-            this.typeOperation = typeOperation;
+            this.Num1 = num1;
+            this.Num2 = num2;
+            this.TypeOperation = typeOperation;
         }
 
         public void executeOperation(string typeOperation)
@@ -42,22 +42,22 @@ namespace SourceControlGit
 
         public double Add()
         {
-            return num1 + num2;
+            return Num1 + Num2;
         }
 
         public double Subtract()
         {
-            return num1 - num2;
+            return Num1 - Num2;
         }
 
         public double Multiply()
         {
-            return num1 * num2;
+            return Num1 * Num2;
         }
 
         public double Devide()
         {
-            return num1 / num2;
+            return Num1 / Num2;
         }
 
     }
