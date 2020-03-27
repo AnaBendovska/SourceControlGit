@@ -21,5 +21,10 @@ namespace SourceControlGit
         {
             Console.WriteLine("Name and Surname: {0} {1}, Grade: {2}", Name, Surname, Grade);
         }
+
+        public void ChangeGrade(string grade)
+        {
+            this.Grade = grade;
+        }
     }
 }
