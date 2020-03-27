@@ -19,6 +19,7 @@ namespace SourceControlGit
 
         public void GetDetails()
         {
+            Console.WriteLine("The details about user:");
             Console.WriteLine("Name and Surname: {0} {1}, Grade: {2}", Name, Surname, Grade);
         }
 

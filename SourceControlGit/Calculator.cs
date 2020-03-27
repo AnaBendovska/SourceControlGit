@@ -23,16 +23,16 @@ namespace SourceControlGit
             switch (typeOperation)
             {
                 case "+":
-                    Add();
+                    Console.WriteLine("{0} + {1} = {2}", Num1, Num2, Add());
                     break;
                 case "-":
-                    Subtract();
+                    Console.WriteLine("{0} - {1} = {2}", Num1, Num2, Subtract());
                     break;
                 case "*":
-                    Multiply();
+                    Console.WriteLine("{0} * {1} = {2}", Num1, Num2, Multiply());
                     break;
                 case "/":
-                    Devide();
+                    Console.WriteLine("{0} / {1} = {2}", Num1, Num2, Devide());
                     break;
                 default:
                     Console.WriteLine("Invalid operation type.");
