@@ -17,5 +17,31 @@ namespace SourceControlGit
             this.num2 = num2;
             this.typeOperation = typeOperation;
         }
+
+        public void executeOperation(string typeOperation)
+        {
+            switch (typeOperation)
+            {
+                case "+":
+                    Add();
+                    break;
+                case "-":
+                    Subtract();
+                    break;
+                default:
+                    Console.WriteLine("Invalid operation type.");
+                    break;
+            }
+        }
+
+        public double Add()
+        {
+            return num1 + num2;
+        }
+
+        public double Subtract()
+        {
+            return num1 - num2;
+        }
     }
 }
