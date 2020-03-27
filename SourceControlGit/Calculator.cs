@@ -28,6 +28,9 @@ namespace SourceControlGit
                 case "-":
                     Subtract();
                     break;
+                case "*":
+                    Multiply();
+                    break;
                 default:
                     Console.WriteLine("Invalid operation type.");
                     break;
@@ -43,5 +46,11 @@ namespace SourceControlGit
         {
             return num1 - num2;
         }
+
+        public double Multiply()
+        {
+            return num1 * num2;
+        }
+
     }
 }
